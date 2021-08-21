@@ -1,0 +1,2 @@
+# FekLang
+LangJam language

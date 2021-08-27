@@ -1,0 +1,30 @@
+// comment
+/*
+multi line comment
+*/
+[comment:"This is a special comment"]
+[TODO]
+    [1:"expression"]
+    [2:"function"]
+    [3:"sleep"]
+    [4:"sleep"]
+[END]
+
+[desc:"say hello to people"]
+new func greet(name){
+    print!(f"Hello, {name}!")
+}
+
+[desc:"Main function"]
+new func main(){
+    def name = "World"
+    greet!(name)
+    ["test1":greet!("Xp")]
+    ["test2":greet!("Foo")]
+    ["test4":greet!("bar")]
+    
+    execute "test1"
+    execute "test2"
+    execute "test3" // Error
+    return 0
+}
